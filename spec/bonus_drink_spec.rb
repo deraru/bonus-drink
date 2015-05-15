@@ -18,4 +18,8 @@ describe BonusDrink do
     let(:amount) { 11 }
     specify { expect(subject).to eq 16 }
   end
+  context 'when buy 100' do
+    let(:amount) { 100 }
+    specify { expect(subject).to eq 149 }
+  end
 end
